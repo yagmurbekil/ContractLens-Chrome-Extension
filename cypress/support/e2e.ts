@@ -8,6 +8,10 @@ import { ExtractedDocument, AnalysisReport } from '../../src/lib/types';
 const mockProvider = new MockProvider();
 let activeReport: AnalysisReport | null = null;
 
+beforeEach(() => {
+  activeReport = null;
+});
+
 const FIXTURE_TEXTS: Record<string, { title: string; docType: any; text: string; wordCount: number }> = {
   'privacy_policy.html': {
     title: 'Acme Cloud Privacy Policy',
