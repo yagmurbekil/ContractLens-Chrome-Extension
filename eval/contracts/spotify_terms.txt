@@ -1,0 +1,22 @@
+Spotify Terms and Conditions of Use
+Source URL: https://www.spotify.com/legal/end-user-agreement/
+Access Date: 2026-10-11
+Document Type: Subscription Terms & Terms of Use
+
+1. Introduction
+Welcome to Spotify. By signing up for or otherwise using our service, you enter into a binding contract with Spotify AB. These Terms of Use govern your access and subscription.
+
+2. Subscriptions, Auto-Renewal, and Cancellation
+If you purchase a Paid Subscription, your payment to Spotify will automatically renew at the end of the applicable subscription period, unless you cancel your Paid Subscription before the end of the current subscription period. The cancellation will take effect the day after the last day of the current subscription period. Spotify does not provide refunds or credits for any partial subscription periods.
+
+3. Changes to the Agreements and Service
+We may occasionally make changes to the Agreements and our service. When we make material changes to the Agreements, we'll provide you with prominent notice as appropriate under the circumstances, e.g., by displaying a prominent notice within the Spotify Service or by sending you an email. Your continued use of the Spotify Service after the changes have been made will constitute your acceptance of the changes.
+
+4. Limitation of Liability
+To the fullest extent permitted by applicable law, in no event will Spotify, its officers, shareholders, employees, agents, directors, subsidiaries, affiliates, successors, assigns, suppliers, or licensors be liable for any indirect, special, incidental, punitive, exemplary, or consequential damages, or any loss of use, data, business, or profits, arising out of the use of or inability to use the Spotify Service, regardless of legal theory.
+
+5. Governing Law and Mandatory Binding Arbitration
+You and Spotify agree that any dispute, claim, or controversy between you and Spotify arising in connection with or relating in any way to these Agreements or to your relationship with Spotify as a user of the Service shall be determined by mandatory binding individual arbitration. You agree to waive the right to participate in a class action lawsuit or class-wide arbitration.
+
+6. User Guidelines and Account Termination
+Spotify may terminate your account or suspend your access to the Spotify Service at any time, including in the event of your actual or suspected unauthorized use of the Spotify Service, or non-compliance with the Agreements, in our sole discretion and without liability.

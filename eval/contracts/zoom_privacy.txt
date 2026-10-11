@@ -1,0 +1,22 @@
+Zoom Global Privacy Statement
+Source URL: https://explore.zoom.us/en/privacy/
+Access Date: 2026-10-11
+Document Type: Privacy Policy
+
+1. What Personal Data Does Zoom Receive?
+Personal Data is any information from or about an identified or identifiable person. We collect data when you use Zoom, including account information, profile pictures, contact details, payment information, device information, IP address, and meeting metadata.
+
+2. How Do We Use Personal Data?
+Zoom uses personal data to operate the Zoom platform, facilitate customer support, communicate with you, authenticate accounts, detect security threats, and conduct analytics. Zoom does not use audio, video, or chat customer content to train our artificial intelligence models without customer consent. However, service-generated telemetry, usage data, and diagnostics may be processed and shared with third-party service providers for machine learning optimization.
+
+3. Sharing Personal Data with Third Parties
+Zoom shares personal data with third-party service providers, contractors, and business partners that perform services on our behalf, such as cloud storage providers, payment processors, customer support vendors, and advertising networks. We may also share personal data with our corporate affiliates and subsidiaries under common ownership.
+
+4. Data Retention
+Zoom retains personal data for as long as necessary to fulfill the purposes for which it was collected, comply with our legal obligations, resolve disputes, and enforce our agreements. Different categories of personal data may be subject to different retention periods. When personal data is no longer needed, we securely delete or anonymize it.
+
+5. Cookies and Tracking Technologies
+Zoom and our third-party advertising partners use cookies, web beacons, and similar tracking technologies to track user activity across devices, personalize content, and display targeted advertisements across third-party websites.
+
+6. Changes to this Privacy Statement
+We may update this Privacy Statement periodically to reflect changes in our legal, operational, or technical practices. If we make material modifications, we will update the "Last Updated" date at the top of this statement and provide notice through our website or direct communication.

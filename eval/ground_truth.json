@@ -1,0 +1,166 @@
+[
+  {
+    "contractId": "spotify",
+    "name": "Spotify Terms and Conditions of Use",
+    "url": "https://www.spotify.com/legal/end-user-agreement/",
+    "accessDate": "2026-10-11",
+    "documentType": "subscription_terms",
+    "groundTruthRisks": [
+      {
+        "clauseId": "spotify-gt-1",
+        "category": "auto_renewal_billing",
+        "severity": "critical",
+        "expectedPhrase": "automatically renew at the end of the applicable subscription period",
+        "rationale": "Otomatik yenileme ve iptal edilene kadar kesintisiz tahsilat riski."
+      },
+      {
+        "clauseId": "spotify-gt-2",
+        "category": "unilateral_changes",
+        "severity": "high",
+        "expectedPhrase": "continued use of the Spotify Service after the changes have been made will constitute your acceptance",
+        "rationale": "Kullanıma devam etmenin tek taraflı değişiklikleri kabul sayılması."
+      },
+      {
+        "clauseId": "spotify-gt-3",
+        "category": "liability_limitation",
+        "severity": "moderate",
+        "expectedPhrase": "no event will Spotify, its officers, shareholders, employees, agents... be liable for any indirect",
+        "rationale": "Genişletilmiş dolaylı ve kar kaybı zararlarından muafiyet."
+      },
+      {
+        "clauseId": "spotify-gt-4",
+        "category": "arbitration_dispute",
+        "severity": "high",
+        "expectedPhrase": "mandatory binding individual arbitration. You agree to waive the right to participate in a class action lawsuit",
+        "rationale": "Zorunlu bireysel tahkim ve toplu dava hakkından feragat."
+      }
+    ]
+  },
+  {
+    "contractId": "x_twitter",
+    "name": "X (Twitter) Terms of Service",
+    "url": "https://x.com/tos",
+    "accessDate": "2026-10-11",
+    "documentType": "terms_of_service",
+    "groundTruthRisks": [
+      {
+        "clauseId": "x-gt-1",
+        "category": "content_rights",
+        "severity": "high",
+        "expectedPhrase": "analyze text and other information you provide to train our machine learning and artificial intelligence models",
+        "rationale": "Kullanıcı içeriklerinin yapay zeka modelleri eğitiminde kullanılması için geniş lisans."
+      },
+      {
+        "clauseId": "x-gt-2",
+        "category": "termination_suspension",
+        "severity": "high",
+        "expectedPhrase": "suspend or terminate your account or cease providing you with all or part of the Services at any time for any or no reason",
+        "rationale": "Gerekçesiz, bildirimsiz ve tazminatsız tek taraflı hesap kapatma yetkisi."
+      },
+      {
+        "clauseId": "x-gt-3",
+        "category": "liability_limitation",
+        "severity": "moderate",
+        "expectedPhrase": "In no event shall X Corp. be liable for any lost profits, lost data, or punitive damages",
+        "rationale": "Sorumluluğun kanunun izin verdiği azami ölçüde sınırlandırılması."
+      },
+      {
+        "clauseId": "x-gt-4",
+        "category": "arbitration_dispute",
+        "severity": "high",
+        "expectedPhrase": "resolve any dispute on an individual basis and waive any right to bring a class action lawsuit",
+        "rationale": "Toplu dava hakkından feragat."
+      }
+    ]
+  },
+  {
+    "contractId": "zoom",
+    "name": "Zoom Global Privacy Statement",
+    "url": "https://explore.zoom.us/en/privacy/",
+    "accessDate": "2026-10-11",
+    "documentType": "privacy_policy",
+    "groundTruthRisks": [
+      {
+        "clauseId": "zoom-gt-1",
+        "category": "data_sharing",
+        "severity": "high",
+        "expectedPhrase": "shares personal data with third-party service providers, contractors, and business partners",
+        "rationale": "Kişisel verilerin geniş iş ortakları ve tedarikçi ağıyla paylaşılması."
+      },
+      {
+        "clauseId": "zoom-gt-2",
+        "category": "tracking_cookies",
+        "severity": "moderate",
+        "expectedPhrase": "track user activity across devices, personalize content, and display targeted advertisements",
+        "rationale": "Cihazlar arası hedefli reklam ve takip çerezleri kullanımı."
+      },
+      {
+        "clauseId": "zoom-gt-3",
+        "category": "data_retention",
+        "severity": "moderate",
+        "expectedPhrase": "retains personal data for as long as necessary to fulfill the purposes",
+        "rationale": "Net bir süre sınırı olmaksızın esnek veri saklama süresi."
+      }
+    ]
+  },
+  {
+    "contractId": "github",
+    "name": "GitHub Terms of Service",
+    "url": "https://docs.github.com/site-policy/github-terms/github-terms-of-service",
+    "accessDate": "2026-10-11",
+    "documentType": "terms_of_service",
+    "groundTruthRisks": [
+      {
+        "clauseId": "github-gt-1",
+        "category": "termination_suspension",
+        "severity": "high",
+        "expectedPhrase": "suspend or terminate your access to all or any part of the Website at any time, with or without cause",
+        "rationale": "Bildirimsiz ve sebepsiz derhal hesap erişimini durdurma yetkisi."
+      },
+      {
+        "clauseId": "github-gt-2",
+        "category": "liability_limitation",
+        "severity": "moderate",
+        "expectedPhrase": "Service \"as is\" and \"as available,\" without warranty of any kind",
+        "rationale": "Hiçbir garanti verilmeksizin 'olduğu gibi' sunulması ve sorumluluk reddi."
+      },
+      {
+        "clauseId": "github-gt-3",
+        "category": "unilateral_changes",
+        "severity": "moderate",
+        "expectedPhrase": "modify or replace these Terms of Service at any time",
+        "rationale": "Şartların tek taraflı değiştirilmesi yetkisi."
+      }
+    ]
+  },
+  {
+    "contractId": "notion",
+    "name": "Notion Subscription Terms and Terms of Service",
+    "url": "https://www.notion.so/terms",
+    "accessDate": "2026-10-11",
+    "documentType": "subscription_terms",
+    "groundTruthRisks": [
+      {
+        "clauseId": "notion-gt-1",
+        "category": "auto_renewal_billing",
+        "severity": "critical",
+        "expectedPhrase": "automatically renew for additional periods... unless Customer cancels the subscription at least thirty (30) days prior",
+        "rationale": "Aboneliğin 30 gün önceden iptal edilmemesi durumunda otomatik yenilenmesi ve katı iptal süresi."
+      },
+      {
+        "clauseId": "notion-gt-2",
+        "category": "liability_limitation",
+        "severity": "high",
+        "expectedPhrase": "liability arising out of or related to this agreement exceed the total amount paid by Customer to Notion in the twelve (12) months",
+        "rationale": "Maddi tazminat tavanının son 12 ayda ödenen ücretle sınırlandırılması."
+      },
+      {
+        "clauseId": "notion-gt-3",
+        "category": "arbitration_dispute",
+        "severity": "high",
+        "expectedPhrase": "settled by binding arbitration in accordance with JAMS... only on an individual basis and not as a plaintiff or class member",
+        "rationale": "Zorunlu JAMS tahkimi ve toplu dava feragati."
+      }
+    ]
+  }
+]

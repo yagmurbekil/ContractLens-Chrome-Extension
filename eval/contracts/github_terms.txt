@@ -1,0 +1,22 @@
+GitHub Terms of Service
+Source URL: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+Access Date: 2026-10-11
+Document Type: Terms of Service
+
+1. Acceptance of Terms
+By creating an account or using GitHub Services, you agree to be bound by these Terms of Service and all incorporated policies.
+
+2. User Content and License Grant
+You retain ownership of the content you create and upload to GitHub. However, you grant GitHub a worldwide, royalty-free, and non-exclusive license to use, display, host, store, and reproduce your content solely to provide and improve the Service, including running automated code analysis, indexing repositories, and operating GitHub Copilot infrastructure.
+
+3. Account Termination and Suspension
+GitHub has the right to suspend or terminate your access to all or any part of the Website at any time, with or without cause, with or without notice, effective immediately. GitHub reserves the right to refuse service to anyone for any reason at any time in its sole discretion.
+
+4. Disclaimer of Warranties and Limitation of Liability
+GitHub provides the Service "as is" and "as available," without warranty of any kind. To the maximum extent permitted by applicable law, in no event will GitHub, its affiliates, directors, employees, or licensors be liable to you for any loss of profits, use, or data, or for any incidental, indirect, special, consequential, or exemplary damages, however arising.
+
+5. Changes to These Terms
+GitHub reserves the right, in our sole discretion, to modify or replace these Terms of Service at any time. If we make material changes, we will notify you by posting an announcement on our Website or sending an email to the address associated with your account prior to the change becoming effective.
+
+6. Governing Law and Jurisdiction
+These Terms and any dispute arising out of or related to them shall be governed by the laws of the State of California, without regard to conflict of law provisions. Any legal action or proceeding shall be brought exclusively in the courts located in San Francisco, California.

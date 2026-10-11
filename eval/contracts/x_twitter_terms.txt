@@ -1,0 +1,22 @@
+X Terms of Service
+Source URL: https://x.com/tos
+Access Date: 2026-10-11
+Document Type: Terms of Service
+
+1. Who May Use the Services
+You may use the Services only if you agree to form a binding contract with X Corp. and are not a person barred from receiving services under the laws of the applicable jurisdiction.
+
+2. Content on the Services and Your Rights
+You retain your rights to any Content you submit, post or display on or through the Services. By submitting, posting or displaying Content on or through the Services, you grant us a worldwide, non-exclusive, royalty-free license (with the right to sublicense) to use, copy, reproduce, process, adapt, modify, publish, transmit, display and distribute such Content in any and all media or distribution methods now known or later developed. You agree that this license includes the right for X to analyze text and other information you provide to train our machine learning and artificial intelligence models, whether generative or otherwise.
+
+3. Discretionary Account Suspension and Termination
+We may suspend or terminate your account or cease providing you with all or part of the Services at any time for any or no reason, including, but not limited to, if we reasonably believe you have violated these Terms, without notice and without liability to you.
+
+4. Limitation of Liability
+By using the Services you agree that the liability of X Corp., its affiliates, officers, employees, agents, and licensors shall be limited to the greatest extent permitted by law. In no event shall X Corp. be liable for any lost profits, lost data, or punitive damages.
+
+5. Modifications to Terms
+We may revise these Terms from time to time. The changes will not be retroactive, and the most current version of the Terms will govern our relationship with you. Your continued use of the Services after revisions become effective establishes your binding agreement to the revised Terms.
+
+6. Class Action Waiver and Dispute Resolution
+All claims and disputes arising out of or relating to these Terms or the Services will be litigated exclusively in the federal or state courts of San Francisco County, California. You agree to resolve any dispute on an individual basis and waive any right to bring a class action lawsuit against X Corp.

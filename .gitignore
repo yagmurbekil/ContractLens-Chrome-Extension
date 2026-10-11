@@ -1,0 +1,25 @@
+# Node
+node_modules/
+dist/
+dist-extension/
+coverage/
+
+# Environment
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cypress (keep demo video!)
+cypress/screenshots/
+cypress/videos/*
+!cypress/videos/contractlens_demo.mp4

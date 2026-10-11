@@ -1,0 +1,50 @@
+{
+  "name": "contract-lens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:vite": "vite build",
+    "build:scripts": "esbuild src/content/contentScript.ts --bundle --outfile=dist/content.js --format=iife && esbuild src/background/serviceWorker.ts --bundle --outfile=dist/background.js --format=esm",
+    "build": "npm run build:vite && npm run build:scripts",
+    "server": "tsx src/backend/server.ts",
+    "test": "vitest run",
+    "test:security": "vitest run tests/security.test.ts",
+    "eval": "tsx eval/run_eval.ts",
+    "cypress:run": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "lucide-react": "^1.54.0",
+    "page-agent": "^1.12.4",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.3.4",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "autoprefixer": "^10.6.1",
+    "cypress": "^16.1.1",
+    "esbuild": "^0.28.2",
+    "jsdom": "^29.1.1",
+    "postcss": "^8.5.29",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.3"
+  }
+}

@@ -1,0 +1,22 @@
+Notion Subscription Terms and Terms of Service
+Source URL: https://www.notion.so/terms
+Access Date: 2026-10-11
+Document Type: Subscription Terms & Terms of Service
+
+1. Agreement and Subscription Plans
+By ordering, subscribing to, or accessing Notion software services, Customer agrees to these Terms.
+
+2. Fees, Auto-Renewal, and Billing
+Paid subscriptions will automatically renew for additional periods equal to the expiring subscription term, unless Customer cancels the subscription at least thirty (30) days prior to the end of the current billing cycle. Notion reserves the right to increase subscription fees upon thirty (30) days advance notice prior to renewal. All payment obligations are non-cancelable and fees paid are strictly non-refundable, except as required by applicable law.
+
+3. Customer Data and Privacy
+Customer retains all right, title, and interest in and to Customer Data. Notion processes Customer Data in accordance with our Data Processing Addendum (DPA). Customer agrees that Notion and its subprocessors may access and process metadata to operate, monitor, and secure the service.
+
+4. Unilateral Modifications
+Notion may modify these Terms from time to time. If Notion makes a material update, Notion will notify Customer by email or through an in-app notice prior to the effective date. Customer's continued use of the Notion Services after the effective date constitutes full acceptance of the revised Terms.
+
+5. Limitation of Liability and Damages Cap
+To the maximum extent permitted by applicable law, neither party nor its suppliers or licensors will be liable for any indirect, special, incidental, punitive, or consequential damages. In no event will Notion's aggregate cumulative liability arising out of or related to this agreement exceed the total amount paid by Customer to Notion in the twelve (12) months preceding the claim.
+
+6. Dispute Resolution and Class Action Waiver
+Any dispute arising out of or related to this Agreement will be settled by binding arbitration in accordance with JAMS Comprehensive Arbitration Rules. Customer and Notion agree that each may bring claims against the other only on an individual basis and not as a plaintiff or class member in any purported class or representative proceeding.
