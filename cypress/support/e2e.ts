@@ -77,6 +77,7 @@ Cypress.on('window:before:load', (win: any) => {
   win.chrome.runtime = win.chrome.runtime || {
     sendMessage: (msg: any, cb: any) => {
       if (msg.type === 'DETECT_PAGE') {
+        activeReport = null;
         const isSufficient = fixtureData.wordCount >= 200;
         if (cb) {
           cb({
@@ -160,8 +161,10 @@ Cypress.on('window:before:load', (win: any) => {
             },
           };
 
-          activeReport = report;
-          if (cb) cb({ type: 'ANALYZE_PAGE_SUCCESS', payload: report });
+          setTimeout(() => {
+            activeReport = report;
+            if (cb) cb({ type: 'ANALYZE_PAGE_SUCCESS', payload: report });
+          }, 2000);
         });
         return;
       }

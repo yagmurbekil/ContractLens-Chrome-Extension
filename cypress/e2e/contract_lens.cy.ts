@@ -1,59 +1,101 @@
-describe('ContractLens End-to-End User Journey', () => {
-  beforeEach(() => {
-    cy.viewport(400, 600);
-  });
-
-  it('Step 1 & 2: Opens privacy policy, detects document type, runs analysis, and shows verified risk clauses', () => {
+describe('ContractLens Production Quality Demo Walkthrough', () => {
+  it('Comprehensive User Journey & Risk Analysis Walkthrough (40-60s)', () => {
+    // -------------------------------------------------------------------------
+    // 1. Normal contract page opening and automatic document detection
+    // -------------------------------------------------------------------------
     cy.visit('/popup.html?fixture=privacy_policy.html');
 
-    // Assert ContractLens header and detected document badge
+    // Extension detects the document type, target domain, and readiness
     cy.contains('ContractLens').should('be.visible');
-    cy.contains('Gizlilik Politikası').should('be.visible');
     cy.contains('acmecloud.example.com').should('be.visible');
+    cy.contains('Gizlilik Politikası').should('be.visible');
+    cy.contains('Sayfa Analize Hazır').should('be.visible');
 
-    // Click "Sayfayı Analiz Et"
+    // Pause for viewer to comfortably read detected metadata and notice extension status
+    cy.wait(1500);
+
+    // -------------------------------------------------------------------------
+    // 2. Click "Sayfayı Analiz Et" and observe multi-step loading progression
+    // -------------------------------------------------------------------------
     cy.get('#btn-analyze-page').should('be.visible').click();
 
-    // Assert analysis completion and verified findings
-    cy.contains(/Risk Değerlendirmesi/i, { timeout: 6000 }).should('be.visible');
+    // The loading sequence displays live status updates:
+    // - Sayfa DOM yapısı ve hukuki bölümler taranıyor...
+    // - Alibaba Page Agent yapısal analizi uygulanıyor...
+    // - Bulgular doğrulanıyor ve risk puanı hesaplanıyor...
+    cy.wait(1500);
+
+    // -------------------------------------------------------------------------
+    // 3. Risk report arrival, inspection of verified clauses, exact quote & Turkish explanation
+    // -------------------------------------------------------------------------
+    cy.contains(/Risk Değerlendirmesi/i, { timeout: 8000 }).should('be.visible');
     cy.contains(/Doğrulandı/i).should('be.visible');
     cy.contains('Kişisel Verilerin Üçüncü Taraflarla Paylaşımı').should('be.visible');
-  });
 
-  it('Step 3: Expands verified finding to inspect exact quotation and plain Turkish explanation', () => {
-    cy.visit('/popup.html?fixture=privacy_policy.html');
-    cy.get('#btn-analyze-page').click();
+    // Pause to let viewer absorb the overall risk score and verified count
+    cy.wait(1500);
 
-    cy.contains('Kişisel Verilerin Üçüncü Taraflarla Paylaşımı', { timeout: 6000 }).should('be.visible').click();
+    // Expand the first risky clause to inspect verbatim quotation and Turkish explanation
+    cy.contains('Kişisel Verilerin Üçüncü Taraflarla Paylaşımı').click();
 
-    // Assert Turkish explanation, verbatim quote, and legal disclaimer
     cy.contains('Orijinal Alıntı').should('be.visible');
     cy.contains('Kullanıcıya Etkisi').should('be.visible');
     cy.contains('ContractLens hukuki tavsiye vermez').should('be.visible');
-  });
 
-  it('Step 4: Encounters insufficient or incomplete text and honestly displays uncertainty instead of fake score', () => {
+    // Give viewer ample time (8 seconds) to read the exact quotation and plain Turkish explanation
+    cy.wait(3000);
+
+    // Expand the second finding (Unilateral Modifications) to show broad risk coverage
+    cy.contains('Koşullarda Tek Taraflı Değişiklik Hakkı').should('be.visible').click();
+    cy.wait(1500);
+
+    // -------------------------------------------------------------------------
+    // 4. Incomplete/short text document: Honest guardrail "Yetersiz Veri / Analiz Belirsiz"
+    // -------------------------------------------------------------------------
     cy.visit('/popup.html?fixture=insufficient_data.html');
+
+    // Document detection confirms short legal notice
+    cy.contains('Genel Hukuki / Standart Metin').should('be.visible');
+    cy.wait(3000);
+
+    // Initiate analysis
     cy.get('#btn-analyze-page').should('be.visible').click();
+    cy.wait(3000);
 
-    // Must honestly display Insufficient Data banner, NOT a false 0-risk score!
-    cy.contains(/Yetersiz Veri \/ Analiz Belirsiz/i, { timeout: 6000 }).should('be.visible');
-  });
+    // System honestly warns about insufficient text instead of inventing fake 0-risk score
+    cy.contains(/Yetersiz Veri \/ Analiz Belirsiz/i, { timeout: 8000 }).should('be.visible');
+    cy.contains(/asgari 200 kelime gereklidir/i).should('be.visible');
 
-  it('Step 5: Demonstrates prompt injection resistance - malicious instructions ignored and warning displayed', () => {
+    // Allow viewer to absorb the honest guardrail behavior
+    cy.wait(2000);
+
+    // -------------------------------------------------------------------------
+    // 5. Prompt injection resistance: Malicious directives ignored & security warning banner
+    // -------------------------------------------------------------------------
     cy.visit('/popup.html?fixture=prompt_injection.html');
+
+    // Detected document
+    cy.contains('Kullanım Koşulları').should('be.visible');
+    cy.wait(3000);
+
+    // Initiate analysis on malicious document
     cy.get('#btn-analyze-page').should('be.visible').click();
+    cy.wait(3000);
 
-    // Assert security warning banner is rendered
-    cy.contains(/Güvenlik Uyarısı \(Prompt Injection\)/i, { timeout: 6000 }).should('be.visible');
-    cy.contains('ContractLens hukuki tavsiye vermez').should('be.visible');
-  });
+    // Assert that prompt injection attempts were intercepted and neutralized
+    cy.contains(/Güvenlik Uyarısı \(Prompt Injection\)/i, { timeout: 8000 }).should('be.visible');
+    cy.contains(/yok sayıldı/i).should('be.visible');
 
-  it('Full Sidepanel Report Inspection', () => {
-    cy.viewport(1024, 768);
+    // Allow viewer to review security defense banner
+    cy.wait(7000);
+
+    // -------------------------------------------------------------------------
+    // 6. Sidepanel comprehensive inspection (Closing Overview)
+    // -------------------------------------------------------------------------
     cy.visit('/sidepanel.html');
     cy.contains('ContractLens').should('be.visible');
     cy.contains('Detaylı Rapor').should('be.visible');
     cy.contains('ContractLens hukuki tavsiye vermez').should('be.visible');
+    cy.wait(4500);
   });
 });

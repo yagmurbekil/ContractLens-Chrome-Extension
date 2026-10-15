@@ -92,7 +92,7 @@ export const PopupApp: React.FC = () => {
   const riskInfo = report ? RISK_LEVEL_CONFIG[report.riskLevel] : null;
 
   return (
-    <div className="w-[380px] min-h-[520px] bg-slate-950 text-slate-100 p-4 flex flex-col font-sans select-none border border-slate-800">
+    <div className="w-[390px] min-h-[550px] bg-slate-950 text-slate-100 p-4 flex flex-col font-sans select-none">
       {/* Header */}
       <header className="flex items-center justify-between pb-3 mb-3 border-b border-slate-800">
         <div className="flex items-center space-x-2">
